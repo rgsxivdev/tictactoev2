@@ -1,15 +1,11 @@
-body,
+
 html {
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #333;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
@@ -33,7 +29,7 @@ body {
   width: 80px;
   height: 80px;
   background-color: #222;
-  border: 2px solid #1111;
+  border: 2px solid #111;
   display: flex;
   align-items: center;
   justify-content: center;

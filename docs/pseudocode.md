@@ -1,8 +1,5 @@
-- Create a function to generate the gameboard
+# Tic Tac Toe App
 
-  - Select the gameboard-area div
-  - create the html using grid
+## Procedures
 
-- Create a player class
-- Create two players
--
+
