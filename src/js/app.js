@@ -1,13 +1,14 @@
-function generateGameboard(){
+
+function generateGameboard(gridSize){
     const grid = document.querySelector('.grid'); 
-   for (let i = 0; i < 9; i++){
-    const div = document.createElement('div');
-    div.classList.add('cell');
-    div.dataset.cell = i;
-    grid.appendChild(div);
-    
+    grid.innerHTML = "";
+    grid.style.setProperty('--grid-size', gridSize);
+    for (let i = 0; i < gridSize * gridSize; i++){
+    const cell = document.createElement('div');
+    cell.classList.add('cell');
+    cell.dataset.cell = i;
+    grid.appendChild(cell);
    }
 }
 
-
-generateGameboard();
+generateGameboard(3);

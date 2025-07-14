@@ -1,3 +1,6 @@
+:root {
+  --grid-size: 3;
+}
 
 html {
   margin: 0;
@@ -18,8 +21,8 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 80px);
-  grid-template-rows: repeat(3, 80px);
+  grid-template-columns: repeat(var(--grid-size), 80px);
+  grid-template-rows: repeat(var(--grid-size), 80px);
   gap: 5px;
   justify-content: center;
   align-items: center;
